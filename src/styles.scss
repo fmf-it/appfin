@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+// html, body { height: 100%; }
+.content {
+    height: 100vh;
+    width: 70%;
+    padding: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+h2 {
+    background-color: aquamarine; 
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.balance-summary {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  max-width: 500px;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.card.positive {
+  background-color: #e0f7fa;
+}
+
+.card.negative {
+  background-color: #ffebee;
+}
+
+.card.balance {
+  background-color: #f2fff2;
+}
+
+mat-card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+mat-card-content p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around; /* Distribui igualmente os ícones */
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 5px; /* Espaçamento após o último card */
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Maior espaçamento entre ícones */
+}
+
+.icon-item mat-icon {
+  font-size: 35px; /* Aumenta o tamanho dos ícones para manter o equilíbrio visual */
+  margin-bottom: 5px; /* Menor espaço entre ícone e texto */
+  margin-right: 10px;
+}
+
+.icon-item span {
+  margin-top: 10px;
+  font-size: 16px; /* Tamanho do texto mais equilibrado */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;  /* Alinha os botões lado a lado */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;   /* Faz o label aparecer abaixo do botão */
+  align-items: center;
+  margin: 0 10px;           /* Espaçamento horizontal entre botões */
+}
+
+.button-container button {
+  width: 56px;              /* Largura do botão */
+  height: 56px;             /* Altura do botão */
+}
+
+.button-container mat-icon {
+  font-size: 24px;          /* Tamanho do ícone */
+}
+
+.button-label {
+  margin-top: 8px;
+  font-size: 14px;          /* Tamanho do label */
+  color: #333;              /* Cor do label */
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
