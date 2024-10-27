@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
@@ -16,13 +17,21 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-import { HomeComponent } from './home/home.component'; // Adicione o MatMenuModule
+import {MatTableModule} from '@angular/material/table';
 
+// TELAS
+import { HomeComponent } from './home/home.component';
+import { RelatoriosComponent } from './relatorios/relatorios.component';
+import { CategoriasComponent } from './categorias/categorias.component';
+import { CategoriaFormComponent } from './categoriaform/categoriaform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    RelatoriosComponent,
+    CategoriasComponent,
+    CategoriaFormComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,8 @@ import { HomeComponent } from './home/home.component'; // Adicione o MatMenuModu
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule
   ],
   providers: [
     provideClientHydration(),

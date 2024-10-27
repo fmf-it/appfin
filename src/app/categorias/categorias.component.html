@@ -1,0 +1,38 @@
+<div class="content"> 
+    <section>
+      <div class="button-row">
+        <!-- Botão Nova Categoria (Verde) -->
+        <div class="button-container">
+          <button mat-fab color="primary" [ngStyle]="{'background-color':'green'}" (click)="irParaNovaCategoria()">
+            <mat-icon>add</mat-icon>
+          </button>
+          <span class="button-label">Nova Categoria</span>
+        </div>
+      </div>
+      
+      <!-- Tabela de Categorias -->
+      <table mat-table [dataSource]="categorias" class="mat-elevation-z8">
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <td mat-cell *matCellDef="let categoria"> {{categoria.nome}} </td>
+        </ng-container>
+  
+        <!-- Coluna de ações -->
+        <ng-container matColumnDef="acoes">
+          <th mat-header-cell *matHeaderCellDef> Ações </th>
+          <td mat-cell *matCellDef="let categoria">
+            <button mat-icon-button color="primary" (click)="editarCategoria(categoria)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deletarCategoria(categoria)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </section>
+  </div>
+  
