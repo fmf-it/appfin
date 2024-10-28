@@ -7,10 +7,22 @@
     margin-left: 15%;
     margin-right: 15%;
   }
+.button-config {
+    display: flexbox;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+.label-config{
+    margin-left: 10px;
+  }
 
 h2 {
     background-color: aquamarine; 
-}
+   }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
